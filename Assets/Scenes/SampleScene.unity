@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b721959f3a9a53488fd0121d58e3009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _starTriangleSize: 50
+  _starTriangleSize: 10
   _userAge: 80
   _factorialValue: 10
 --- !u!4 &200943729

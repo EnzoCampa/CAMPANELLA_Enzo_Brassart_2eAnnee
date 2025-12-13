@@ -32,28 +32,27 @@ public class ConditionsLoopsExercise : MonoBehaviour
         }
         else if (_userAge >= 64)
         {
-            Debug.Log("retriate");
+            Debug.Log("retraite");
         }
     }
+
     public void DrawTriangle()
     {
         string triangle = "";
-
-        for (int i = 0; i <= _starTriangleSize; i++)
+        for (int i = 1; i <= _starTriangleSize; i++)
         {
-            triangle += new string('*', i) + "\n";
+            int spaces = _starTriangleSize - i;
+            int stars = i * 2 - 1; 
+            triangle += new string(' ', spaces) + new string('*', stars) + "\n";
         }
 
         Debug.Log(triangle);
     }
-
-
     public void PrintFactorial()
     {
         int resultat = 1;
         if (_factorialValue < 0 || _factorialValue > 20)
         {
-            Debug.Log("Erreur : la valeur doit être comprise entre 0 et 20.");
             return;
         }
         else
